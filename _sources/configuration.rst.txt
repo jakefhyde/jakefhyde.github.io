@@ -1,4 +1,0 @@
-Configuration
-=============
-
-**microlith** can be configured 

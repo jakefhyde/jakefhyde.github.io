@@ -90,7 +90,13 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_and_usage.html">Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
 </ul>
@@ -165,7 +171,7 @@
   <div class="section" id="class-service-executor">
 <span id="exhale-class-classmicrolith-1-1service-executor"></span><h1>Class service_executor<a class="headerlink" href="#class-service-executor" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_service_executor.h.html#file-home-jfh-documents-libs-microlith-cpp-include-microlith-service-executor-h"><span class="std std-ref">File service_executor.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_microlith_service_executor.h.html#file-microlith-service-executor-h"><span class="std std-ref">File service_executor.h</span></a></p></li>
 </ul>
 <div class="section" id="inheritance-relationships">
 <h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
@@ -184,14 +190,19 @@
 <dt class="sig sig-object cpp" id="_CPPv4N9microlith16service_executorE">
 <span id="_CPPv3N9microlith16service_executorE"></span><span id="_CPPv2N9microlith16service_executorE"></span><span id="microlith::service_executor"></span><span class="target" id="classmicrolith_1_1service__executor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">microlith</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">service_executor</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">microlith</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classmicrolith_1_1service.html#_CPPv4I0EN9microlith7serviceE" title="microlith::service"><span class="n"><span class="pre">service</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N9microlith16service_executorE" title="microlith::service_executor"><span class="n"><span class="pre">service_executor</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">microlith</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classmicrolith_1_1provides__services.html#_CPPv4IDpEN9microlith17provides_servicesE" title="microlith::provides_services"><span class="n"><span class="pre">provides_services</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classmicrolith_1_1executable__interface.html#_CPPv4N9microlith20executable_interfaceE" title="microlith::executable_interface"><span class="n"><span class="pre">executable_interface</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">microlith</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classmicrolith_1_1receives__services.html#_CPPv4IDpEN9microlith17receives_servicesE" title="microlith::receives_services"><span class="n"><span class="pre">receives_services</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classmicrolith_1_1executable__interface.html#_CPPv4N9microlith20executable_interfaceE" title="microlith::executable_interface"><span class="n"><span class="pre">executable_interface</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N9microlith16service_executorE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Simple executor class which manages starting and stopping of basic services. </p>
-<p><dl class="simple">
-<dt><strong>Provides</strong></dt><dd><p><ul class="simple">
-<li><p><a class="reference internal" href="classmicrolith_1_1executable__interface.html#classmicrolith_1_1executable__interface"><span class="std std-ref">executable_interface</span></a> abcdef</p></li>
+<p>The <a class="reference internal" href="#classmicrolith_1_1service__executor"><span class="std std-ref">service_executor</span></a> is itself an <a class="reference internal" href="classmicrolith_1_1executable__interface.html#classmicrolith_1_1executable__interface"><span class="std std-ref">executable_interface</span></a>: starting it starts all previously received services, and stopping does the same</p>
+<p><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This class is provided as a convenience class, and many services may not have states analogous to “start” and “stop”: that’s ok.</p>
+</div>
+<dl class="simple">
+<dt><strong>Provides\n</strong></dt><dd><p><ul class="simple">
+<li><p><a class="reference internal" href="classmicrolith_1_1executable__interface.html#classmicrolith_1_1executable__interface"><span class="std std-ref">executable_interface</span></a></p></li>
 </ul>
 </p>
 </dd>
-<dt><strong>Receives </strong></dt><dd><p><ul class="simple">
-<li><p><a class="reference internal" href="classmicrolith_1_1executable__interface.html#classmicrolith_1_1executable__interface"><span class="std std-ref">executable_interface</span></a> Test</p></li>
+<dt><strong>Receives\n</strong></dt><dd><p><ul class="simple">
+<li><p><a class="reference internal" href="classmicrolith_1_1executable__interface.html#classmicrolith_1_1executable__interface"><span class="std std-ref">executable_interface</span></a></p></li>
 </ul>
 </p>
 </dd>

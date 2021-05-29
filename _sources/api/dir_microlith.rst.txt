@@ -1,0 +1,24 @@
+.. _dir_microlith:
+
+
+Directory microlith
+===================
+
+
+*Directory path:* ``microlith``
+
+Subdirectories
+--------------
+
+- :ref:`dir_microlith_detail`
+
+
+Files
+-----
+
+- :ref:`file_microlith_executable_interface.h`
+- :ref:`file_microlith_in_process_service_discoverer.h`
+- :ref:`file_microlith_service_executor.h`
+- :ref:`file_microlith_services.h`
+
+

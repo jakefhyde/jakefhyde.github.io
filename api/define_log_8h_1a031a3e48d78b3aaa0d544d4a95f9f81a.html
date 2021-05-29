@@ -90,7 +90,13 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation_and_usage.html">Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
 </ul>
@@ -165,14 +171,16 @@
   <div class="section" id="define-microlith-trace">
 <span id="exhale-define-log-8h-1a031a3e48d78b3aaa0d544d4a95f9f81a"></span><h1>Define MICROLITH_TRACE<a class="headerlink" href="#define-microlith-trace" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h.html#file-home-jfh-documents-libs-microlith-cpp-include-microlith-detail-log-h"><span class="std std-ref">File log.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_microlith_detail_log.h.html#file-microlith-detail-log-h"><span class="std std-ref">File log.h</span></a></p></li>
 </ul>
 <div class="section" id="define-documentation">
 <h2>Define Documentation<a class="headerlink" href="#define-documentation" title="Permalink to this headline">¶</a></h2>
 <dl class="cpp macro">
 <dt class="sig sig-object cpp" id="c.MICROLITH_TRACE">
 <span class="target" id="log_8h_1a031a3e48d78b3aaa0d544d4a95f9f81a"></span><span class="sig-name descname"><span class="n"><span class="pre">MICROLITH_TRACE</span></span></span><span class="sig-paren">(</span><span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.MICROLITH_TRACE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Macro for trace logging. </p>
+<p>If MICROLITH_NO_SPDLOG is not defined, calls the SPDLOG_TRACE macro. Otherwise checks if the macro is already defined and if not defines an empty definition. </p>
+</dd></dl>
 
 </div>
 </div>

@@ -3,7 +3,7 @@
 Class executable_interface
 ==========================
 
-- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_executable_interface.h`
+- Defined in :ref:`file_microlith_executable_interface.h`
 
 
 Inheritance Relationships

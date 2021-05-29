@@ -1,0 +1,45 @@
+
+.. _program_listing_file_microlith_service_executor.h:
+
+Program Listing for File service_executor.h
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_microlith_service_executor.h>` (``microlith/service_executor.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef INCLUDE_MICROLITH_SERVICE_EXECUTOR_H_
+   #define INCLUDE_MICROLITH_SERVICE_EXECUTOR_H_
+   
+   #include <memory>
+   #include <unordered_set>
+   
+   #include "microlith/executable_interface.h"
+   #include "microlith/services.h"
+   
+   namespace microlith {
+   
+   class service_executor : public service<service_executor>,
+                            public provides_services<executable_interface>,
+                            public receives_services<executable_interface> {
+    public:
+     ~service_executor() override;
+   
+     void receive(std::shared_ptr<executable_interface> service) override;
+   
+     void start() override;
+     void stop() override;
+   
+     bool started();
+   
+    private:
+     std::unordered_set<std::shared_ptr<executable_interface>> _services{};
+     std::unordered_set<std::shared_ptr<executable_interface>> _running_services{};
+   };  // class service_executor
+   
+   }  // namespace microlith
+   
+   #endif  // INCLUDE_MICROLITH_SERVICE_EXECUTOR_H_

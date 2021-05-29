@@ -1,0 +1,39 @@
+
+.. _program_listing_file_microlith_in_process_service_discoverer.h:
+
+Program Listing for File in_process_service_discoverer.h
+========================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_microlith_in_process_service_discoverer.h>` (``microlith/in_process_service_discoverer.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef INCLUDE_MICROLITH_IN_PROCESS_SERVICE_DISCOVERER_H_
+   #define INCLUDE_MICROLITH_IN_PROCESS_SERVICE_DISCOVERER_H_
+   
+   #include <memory>
+   #include <unordered_map>
+   
+   #include "microlith/services.h"
+   
+   namespace microlith {
+   
+   class in_process_service_discoverer
+       : public service<in_process_service_discoverer>,
+         public provides_services<service_discovery_interface> {
+    public:
+     void discover(std::shared_ptr<abstract_service> service) override;
+   
+     bool has_service(service_id id);
+     std::shared_ptr<abstract_service> get_service(service_id id);
+   
+    private:
+     std::unordered_map<service_id, std::shared_ptr<abstract_service>> _services{};
+   };  // class in_process_service_discoverer
+   
+   }  // namespace microlith
+   
+   #endif  // INCLUDE_MICROLITH_IN_PROCESS_SERVICE_DISCOVERER_H_

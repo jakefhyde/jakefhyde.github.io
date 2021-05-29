@@ -1,0 +1,26 @@
+
+.. _program_listing_file_microlith_detail_macros.h:
+
+Program Listing for File macros.h
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_microlith_detail_macros.h>` (``microlith/detail/macros.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef INCLUDE_MICROLITH_DETAIL_MACROS_H_
+   #define INCLUDE_MICROLITH_DETAIL_MACROS_H_
+   
+   #ifndef MICROLITH_EXPORT
+   #ifdef __GNUC__
+   #define MICROLITH_EXPORT __attribute__((visibility("default")))
+   #else
+   #error "Unsupported compiler detected! Please use gcc/clang, or make a pull"
+   "request for your compiler"
+   #endif  // _GNUC__
+   #endif  // MICROLITH_EXPORT
+   
+   #endif  // INCLUDE_MICROLITH_DETAIL_MACROS_H_

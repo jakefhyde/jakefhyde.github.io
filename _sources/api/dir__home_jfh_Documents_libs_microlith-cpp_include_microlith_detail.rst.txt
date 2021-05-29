@@ -12,10 +12,4 @@ Directory detail
 *Directory path:* ``/home/jfh/Documents/libs/microlith-cpp/include/microlith/detail``
 
 
-Files
------
-
-- :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h`
-- :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_macros.h`
-
 

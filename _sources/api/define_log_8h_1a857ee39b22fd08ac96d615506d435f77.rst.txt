@@ -3,7 +3,7 @@
 Define MICROLITH_OFF
 ====================
 
-- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h`
+- Defined in :ref:`file_microlith_detail_log.h`
 
 
 Define Documentation

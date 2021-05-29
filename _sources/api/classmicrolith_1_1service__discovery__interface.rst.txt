@@ -3,7 +3,7 @@
 Class service_discovery_interface
 =================================
 
-- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+- Defined in :ref:`file_microlith_services.h`
 
 
 Inheritance Relationships

@@ -11,7 +11,7 @@ Directories
 .. toctree::
    :maxdepth: 5
 
-   dir__home_jfh_Documents_libs_microlith-cpp_include.rst
+   dir_..rst
 
 .. toctree::
    :maxdepth: 5
@@ -23,11 +23,6 @@ Directories
 
    dir__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail.rst
 
-.. toctree::
-   :maxdepth: 5
-
-   dir__home_jfh_Documents_libs_microlith-cpp_src.rst
-
 Files
 *****
 
@@ -35,49 +30,29 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file__home_jfh_Documents_libs_microlith-cpp_src_abstract_service.cpp.rst
+   file_microlith_executable_interface.h.rst
 
 .. toctree::
    :maxdepth: 5
 
-   file__home_jfh_Documents_libs_microlith-cpp_src_executable_interface.cpp.rst
+   file_microlith_in_process_service_discoverer.h.rst
 
 .. toctree::
    :maxdepth: 5
 
-   file__home_jfh_Documents_libs_microlith-cpp_include_microlith_executable_interface.h.rst
+   file_microlith_detail_log.h.rst
 
 .. toctree::
    :maxdepth: 5
 
-   file__home_jfh_Documents_libs_microlith-cpp_src_in_process_service_discoverer.cpp.rst
+   file_microlith_detail_macros.h.rst
 
 .. toctree::
    :maxdepth: 5
 
-   file__home_jfh_Documents_libs_microlith-cpp_include_microlith_in_process_service_discoverer.h.rst
+   file_microlith_service_executor.h.rst
 
 .. toctree::
    :maxdepth: 5
 
-   file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_macros.h.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file__home_jfh_Documents_libs_microlith-cpp_src_service_executor.cpp.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file__home_jfh_Documents_libs_microlith-cpp_include_microlith_service_executor.h.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h.rst
+   file_microlith_services.h.rst

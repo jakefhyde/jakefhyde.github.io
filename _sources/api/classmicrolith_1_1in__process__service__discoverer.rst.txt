@@ -3,7 +3,7 @@
 Class in_process_service_discoverer
 ===================================
 
-- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_in_process_service_discoverer.h`
+- Defined in :ref:`file_microlith_in_process_service_discoverer.h`
 
 
 Inheritance Relationships

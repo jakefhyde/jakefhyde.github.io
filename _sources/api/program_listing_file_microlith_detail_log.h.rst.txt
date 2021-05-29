@@ -1,0 +1,50 @@
+
+.. _program_listing_file_microlith_detail_log.h:
+
+Program Listing for File log.h
+==============================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_microlith_detail_log.h>` (``microlith/detail/log.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef INCLUDE_MICROLITH_DETAIL_LOG_H_
+   #define INCLUDE_MICROLITH_DETAIL_LOG_H_
+   
+   #ifndef MICROLITH_NO_SPDLOG
+   #include <spdlog/spdlog.h>
+   #define MICROLITH_TRACE(...) SPDLOG_TRACE(__VA_ARGS__)
+   #define MICROLITH_DEBUG(...) SPDLOG_DEBUG(__VA_ARGS__)
+   #define MICROLITH_INFO(...) SPDLOG_INFO(__VA_ARGS__)
+   #define MICROLITH_WARN(...) SPDLOG_WARN(__VA_ARGS__)
+   #define MICROLITH_ERROR(...) SPDLOG_ERROR(__VA_ARGS__)
+   #define MICROLITH_CRITICAL(...) SPDLOG_CRITICAL(__VA_ARGS__)
+   #define MICROLITH_OFF(...) SPDLOG_OFF(__VA_ARGS__)
+   #else
+   #ifndef MICROLITH_TRACE
+   #define MICROLITH_TRACE(...)
+   #endif  // MICROLITH_TRACE
+   #ifndef MICROLITH_DEBUG
+   #define MICROLITH_DEBUG(...)
+   #endif  // MICROLITH_DEBUG
+   #ifndef MICROLITH_INFO
+   #define MICROLITH_INFO(...)
+   #endif  // MICROLITH_INFO
+   #ifndef MICROLITH_WARN
+   #define MICROLITH_WARN(...)
+   #endif  // MICROLITH_WARN
+   #ifndef MICROLITH_ERROR
+   #define MICROLITH_ERROR(...)
+   #endif  // MICROLITH_ERROR
+   #ifndef MICROLITH_CRITICAL
+   #define MICROLITH_CRITICAL(...)
+   #endif  // MICROLITH_CRITICAL
+   #ifndef MICROLITH_OFF
+   #define MICROLITH_OFF(...)
+   #endif  // MICROLITH_OFF
+   #endif
+   
+   #endif  // INCLUDE_MICROLITH_DETAIL_LOG_H_

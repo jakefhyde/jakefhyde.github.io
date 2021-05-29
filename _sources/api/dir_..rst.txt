@@ -1,0 +1,16 @@
+.. _dir_.:
+
+
+Directory .
+===========
+
+
+*Directory path:* ``.``
+
+Subdirectories
+--------------
+
+- :ref:`dir__home_jfh_Documents_libs_microlith-cpp_include_microlith`
+
+
+

@@ -1,0 +1,38 @@
+
+.. _program_listing_file__home_jfh_Documents_libs_microlith-cpp_src_abstract_service.cpp:
+
+Program Listing for File abstract_service.cpp
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file__home_jfh_Documents_libs_microlith-cpp_src_abstract_service.cpp>` (``/home/jfh/Documents/libs/microlith-cpp/src/abstract_service.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "microlith/services.h"
+   
+   namespace microlith {
+   
+   abstract_service::~abstract_service() = default;
+   
+   service_id abstract_service::id() const {
+     MICROLITH_CRITICAL(
+         "Default id called, an interface was provided without inherting "
+         "abstract_service");
+     return {};
+   }
+   
+   std::unordered_set<interface_id> abstract_service::provides() const {
+     return {};
+   }
+   
+   std::unordered_set<interface_id> abstract_service::receives() const {
+     return {};
+   }
+   
+   void abstract_service::_receive_services(
+       std::shared_ptr<abstract_service> /* service */) {}
+   
+   }  // namespace microlith

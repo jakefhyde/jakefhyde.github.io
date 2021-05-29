@@ -1,0 +1,13 @@
+.. _exhale_define_log_8h_1a6095be5db5d79f75b96224fabb4758a7:
+
+Define MICROLITH_CRITICAL
+=========================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MICROLITH_CRITICAL

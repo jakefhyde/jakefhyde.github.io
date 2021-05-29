@@ -1,0 +1,13 @@
+.. _exhale_typedef_services_8h_1a1e9c494312da8ba2017566e797818768:
+
+Typedef microlith::service_id
+=============================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: microlith::service_id

@@ -1,0 +1,13 @@
+.. _exhale_define_log_8h_1a031a3e48d78b3aaa0d544d4a95f9f81a:
+
+Define MICROLITH_TRACE
+======================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MICROLITH_TRACE

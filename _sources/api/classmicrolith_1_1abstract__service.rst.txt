@@ -1,0 +1,34 @@
+.. _exhale_class_classmicrolith_1_1abstract__service:
+
+Class abstract_service
+======================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public microlith::provides_service< T >`` (:ref:`exhale_class_classmicrolith_1_1provides__service`)
+- ``public microlith::receives_service< T >`` (:ref:`exhale_class_classmicrolith_1_1receives__service`)
+- ``public microlith::service< T >`` (:ref:`exhale_class_classmicrolith_1_1service`)
+- ``public microlith::service_interface< T >`` (:ref:`exhale_class_classmicrolith_1_1service__interface`)
+- ``public microlith::provides_service< Args >`` (:ref:`exhale_class_classmicrolith_1_1provides__service`)
+- ``public microlith::receives_service< Args >`` (:ref:`exhale_class_classmicrolith_1_1receives__service`)
+- ``public microlith::service< in_process_service_discoverer >`` (:ref:`exhale_class_classmicrolith_1_1service`)
+- ``public microlith::service< service_executor >`` (:ref:`exhale_class_classmicrolith_1_1service`)
+- ``public microlith::service_interface< executable_interface >`` (:ref:`exhale_class_classmicrolith_1_1service__interface`)
+- ``public microlith::service_interface< service_discovery_interface >`` (:ref:`exhale_class_classmicrolith_1_1service__interface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: microlith::abstract_service
+   :members:
+   :protected-members:
+   :undoc-members:

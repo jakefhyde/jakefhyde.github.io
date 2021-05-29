@@ -1,0 +1,28 @@
+.. _dir__home_jfh_Documents_libs_microlith-cpp_include_microlith:
+
+
+Directory microlith
+===================
+
+
+|exhale_lsh| :ref:`Parent directory <dir__home_jfh_Documents_libs_microlith-cpp_include>` (``/home/jfh/Documents/libs/microlith-cpp/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``/home/jfh/Documents/libs/microlith-cpp/include/microlith``
+
+Subdirectories
+--------------
+
+- :ref:`dir__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail`
+
+
+Files
+-----
+
+- :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_executable_interface.h`
+- :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_in_process_service_discoverer.h`
+- :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_service_executor.h`
+- :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+
+

@@ -1,0 +1,26 @@
+.. _exhale_class_classmicrolith_1_1provides__service:
+
+Template Class provides_service
+===============================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public T``
+- ``public microlith::abstract_service`` (:ref:`exhale_class_classmicrolith_1_1abstract__service`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: microlith::provides_service
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define_log_8h_1a723ce9b8fa428fbb120113c731b28371:
+
+Define MICROLITH_DEBUG
+======================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MICROLITH_DEBUG

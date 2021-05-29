@@ -1,0 +1,13 @@
+.. _exhale_function_services_8h_1a6093579473d1a11a382189ed0adb06cc:
+
+Template Function microlith::detail::get_service_id
+===================================================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: microlith::detail::get_service_id()

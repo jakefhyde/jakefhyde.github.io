@@ -1,0 +1,26 @@
+.. _exhale_class_classmicrolith_1_1in__process__service__discoverer:
+
+Class in_process_service_discoverer
+===================================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_in_process_service_discoverer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public microlith::service< in_process_service_discoverer >`` (:ref:`exhale_class_classmicrolith_1_1service`)
+- ``public microlith::provides_services< service_discovery_interface >`` (:ref:`exhale_class_classmicrolith_1_1provides__services`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: microlith::in_process_service_discoverer
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,22 @@
+
+.. _namespace_microlith__detail:
+
+Namespace microlith::detail
+===========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_services_8h_1a3b83c3685f600c28a9ab398a90d62a6e`
+
+- :ref:`exhale_function_services_8h_1a6093579473d1a11a382189ed0adb06cc`

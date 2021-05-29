@@ -1,0 +1,13 @@
+.. _exhale_define_log_8h_1afd0ce1d79e59ca95b34b5fbba277872f:
+
+Define MICROLITH_WARN
+=====================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MICROLITH_WARN

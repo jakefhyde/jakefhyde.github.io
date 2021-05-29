@@ -1,0 +1,27 @@
+.. _exhale_class_classmicrolith_1_1service__executor:
+
+Class service_executor
+======================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_service_executor.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public microlith::service< service_executor >`` (:ref:`exhale_class_classmicrolith_1_1service`)
+- ``public microlith::provides_services< executable_interface >`` (:ref:`exhale_class_classmicrolith_1_1provides__services`)
+- ``public microlith::receives_services< executable_interface >`` (:ref:`exhale_class_classmicrolith_1_1receives__services`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: microlith::service_executor
+   :members:
+   :protected-members:
+   :undoc-members:

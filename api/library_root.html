@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Library API &mdash; Microlith 0.0.5 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Namespace microlith" href="namespace_microlith.html" />
+    <link rel="prev" title="Welcome to Microlith’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Microlith
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Library API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-api">Full API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_microlith.html">Namespace microlith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_microlith__detail.html">Namespace microlith::detail</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1abstract__service.html">Class abstract_service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1executable__interface.html">Class executable_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1in__process__service__discoverer.html">Class in_process_service_discoverer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1provides__service.html">Template Class provides_service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1provides__services.html">Template Class provides_services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1receives__service.html">Template Class receives_service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1receives__services.html">Template Class receives_services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1service.html">Template Class service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1service__discovery__interface.html">Class service_discovery_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1service__executor.html">Class service_executor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmicrolith_1_1service__interface.html">Template Class service_interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_services_8h_1a3b83c3685f600c28a9ab398a90d62a6e.html">Template Function microlith::detail::get_interface_id</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_services_8h_1a6093579473d1a11a382189ed0adb06cc.html">Template Function microlith::detail::get_service_id</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1a6095be5db5d79f75b96224fabb4758a7.html">Define MICROLITH_CRITICAL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1a723ce9b8fa428fbb120113c731b28371.html">Define MICROLITH_DEBUG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1a7331ab3fe894ef71c4a5d70217c6baf3.html">Define MICROLITH_ERROR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1abe64257d658ed5d07c3a0e7e00075335.html">Define MICROLITH_INFO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1a857ee39b22fd08ac96d615506d435f77.html">Define MICROLITH_OFF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1a031a3e48d78b3aaa0d544d4a95f9f81a.html">Define MICROLITH_TRACE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_log_8h_1afd0ce1d79e59ca95b34b5fbba277872f.html">Define MICROLITH_WARN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_services_8h_1a9f7ee149d05544c295080b8ebbb454d2.html">Typedef microlith::interface_id</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_services_8h_1a1e9c494312da8ba2017566e797818768.html">Typedef microlith::service_id</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Microlith</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Library API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/library_root.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="library-api">
+<h1>Library API<a class="headerlink" href="#library-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="class-hierarchy">
+<h2>Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="class-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li class="lastChild">Namespace <a href="namespace_microlith.html#namespace-microlith">microlith</a><ul><li>Class <a href="classmicrolith_1_1abstract__service.html#exhale-class-classmicrolith-1-1abstract-service">abstract_service</a></li><li>Class <a href="classmicrolith_1_1executable__interface.html#exhale-class-classmicrolith-1-1executable-interface">executable_interface</a></li><li>Class <a href="classmicrolith_1_1in__process__service__discoverer.html#exhale-class-classmicrolith-1-1in-process-service-discoverer">in_process_service_discoverer</a></li><li>Template Class <a href="classmicrolith_1_1provides__service.html#exhale-class-classmicrolith-1-1provides-service">provides_service</a></li><li>Template Class <a href="classmicrolith_1_1provides__services.html#exhale-class-classmicrolith-1-1provides-services">provides_services</a></li><li>Template Class <a href="classmicrolith_1_1receives__service.html#exhale-class-classmicrolith-1-1receives-service">receives_service</a></li><li>Template Class <a href="classmicrolith_1_1receives__services.html#exhale-class-classmicrolith-1-1receives-services">receives_services</a></li><li>Template Class <a href="classmicrolith_1_1service.html#exhale-class-classmicrolith-1-1service">service</a></li><li>Class <a href="classmicrolith_1_1service__discovery__interface.html#exhale-class-classmicrolith-1-1service-discovery-interface">service_discovery_interface</a></li><li>Class <a href="classmicrolith_1_1service__executor.html#exhale-class-classmicrolith-1-1service-executor">service_executor</a></li><li class="lastChild">Template Class <a href="classmicrolith_1_1service__interface.html#exhale-class-classmicrolith-1-1service-interface">service_interface</a></li></ul></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView class-treeView --></div>
+<div class="section" id="file-hierarchy">
+<h2>File Hierarchy<a class="headerlink" href="#file-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="file-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li>Directory <a href="dir__home_jfh_Documents_libs_microlith-cpp_include.html#dir-home-jfh-Documents-libs-microlith-cpp-include">include</a><ul><li class="lastChild">Directory <a href="dir__home_jfh_Documents_libs_microlith-cpp_include_microlith.html#dir-home-jfh-Documents-libs-microlith-cpp-include-microlith">microlith</a><ul><li>Directory <a href="dir__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail.html#dir-home-jfh-Documents-libs-microlith-cpp-include-microlith-detail">detail</a><ul><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_log.h.html#file-home-jfh-Documents-libs-microlith-cpp-include-microlith-detail-log.h">log.h</a></li><li class="lastChild">File <a href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_detail_macros.h.html#file-home-jfh-Documents-libs-microlith-cpp-include-microlith-detail-macros.h">macros.h</a></li></ul></li><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_executable_interface.h.html#file-home-jfh-Documents-libs-microlith-cpp-include-microlith-executable-interface.h">executable_interface.h</a></li><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_in_process_service_discoverer.h.html#file-home-jfh-Documents-libs-microlith-cpp-include-microlith-in-process-service-discoverer.h">in_process_service_discoverer.h</a></li><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_service_executor.h.html#file-home-jfh-Documents-libs-microlith-cpp-include-microlith-service-executor.h">service_executor.h</a></li><li class="lastChild">File <a href="file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h.html#file-home-jfh-Documents-libs-microlith-cpp-include-microlith-services.h">services.h</a></li></ul></li></ul></li><li class="lastChild">Directory <a href="dir__home_jfh_Documents_libs_microlith-cpp_src.html#dir-home-jfh-Documents-libs-microlith-cpp-src">src</a><ul><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_src_abstract_service.cpp.html#file-home-jfh-Documents-libs-microlith-cpp-src-abstract-service.cpp">abstract_service.cpp</a></li><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_src_executable_interface.cpp.html#file-home-jfh-Documents-libs-microlith-cpp-src-executable-interface.cpp">executable_interface.cpp</a></li><li>File <a href="file__home_jfh_Documents_libs_microlith-cpp_src_in_process_service_discoverer.cpp.html#file-home-jfh-Documents-libs-microlith-cpp-src-in-process-service-discoverer.cpp">in_process_service_discoverer.cpp</a></li><li class="lastChild">File <a href="file__home_jfh_Documents_libs_microlith-cpp_src_service_executor.cpp.html#file-home-jfh-Documents-libs-microlith-cpp-src-service-executor.cpp">service_executor.cpp</a></li></ul></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView file-treeView --></div>
+<div class="section" id="full-api">
+<h2>Full API<a class="headerlink" href="#full-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="namespaces">
+<h3>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_microlith.html">Namespace microlith</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_microlith.html#namespaces">Namespaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_microlith.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_microlith.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_microlith__detail.html">Namespace microlith::detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_microlith__detail.html#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="classes-and-structs">
+<h3>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1abstract__service.html">Class abstract_service</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1abstract__service.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1abstract__service.html#derived-types">Derived Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1abstract__service.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1executable__interface.html">Class executable_interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1executable__interface.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1executable__interface.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1executable__interface.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1in__process__service__discoverer.html">Class in_process_service_discoverer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1in__process__service__discoverer.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1in__process__service__discoverer.html#base-types">Base Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1in__process__service__discoverer.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1provides__service.html">Template Class provides_service</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1provides__service.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1provides__service.html#base-types">Base Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1provides__service.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1provides__services.html">Template Class provides_services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1provides__services.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1provides__services.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1provides__services.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1receives__service.html">Template Class receives_service</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1receives__service.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1receives__service.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1receives__service.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1receives__services.html">Template Class receives_services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1receives__services.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1receives__services.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1receives__services.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1service.html">Template Class service</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1service.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1service__discovery__interface.html">Class service_discovery_interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service__discovery__interface.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1service__discovery__interface.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service__discovery__interface.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1service__executor.html">Class service_executor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service__executor.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1service__executor.html#base-types">Base Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service__executor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classmicrolith_1_1service__interface.html">Template Class service_interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service__interface.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classmicrolith_1_1service__interface.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classmicrolith_1_1service__interface.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_services_8h_1a3b83c3685f600c28a9ab398a90d62a6e.html">Template Function microlith::detail::get_interface_id</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_services_8h_1a3b83c3685f600c28a9ab398a90d62a6e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_services_8h_1a6093579473d1a11a382189ed0adb06cc.html">Template Function microlith::detail::get_service_id</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_services_8h_1a6093579473d1a11a382189ed0adb06cc.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="defines">
+<h3>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1a6095be5db5d79f75b96224fabb4758a7.html">Define MICROLITH_CRITICAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1a6095be5db5d79f75b96224fabb4758a7.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1a723ce9b8fa428fbb120113c731b28371.html">Define MICROLITH_DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1a723ce9b8fa428fbb120113c731b28371.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1a7331ab3fe894ef71c4a5d70217c6baf3.html">Define MICROLITH_ERROR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1a7331ab3fe894ef71c4a5d70217c6baf3.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1abe64257d658ed5d07c3a0e7e00075335.html">Define MICROLITH_INFO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1abe64257d658ed5d07c3a0e7e00075335.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1a857ee39b22fd08ac96d615506d435f77.html">Define MICROLITH_OFF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1a857ee39b22fd08ac96d615506d435f77.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1a031a3e48d78b3aaa0d544d4a95f9f81a.html">Define MICROLITH_TRACE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1a031a3e48d78b3aaa0d544d4a95f9f81a.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_log_8h_1afd0ce1d79e59ca95b34b5fbba277872f.html">Define MICROLITH_WARN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_log_8h_1afd0ce1d79e59ca95b34b5fbba277872f.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="typedefs">
+<h3>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_services_8h_1a9f7ee149d05544c295080b8ebbb454d2.html">Typedef microlith::interface_id</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_services_8h_1a9f7ee149d05544c295080b8ebbb454d2.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_services_8h_1a1e9c494312da8ba2017566e797818768.html">Typedef microlith::service_id</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_services_8h_1a1e9c494312da8ba2017566e797818768.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="namespace_microlith.html" class="btn btn-neutral float-right" title="Namespace microlith" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Microlith’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, dragozir.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

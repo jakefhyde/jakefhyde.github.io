@@ -1,0 +1,51 @@
+
+.. _program_listing_file__home_jfh_Documents_libs_microlith-cpp_src_in_process_service_discoverer.cpp:
+
+Program Listing for File in_process_service_discoverer.cpp
+==========================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file__home_jfh_Documents_libs_microlith-cpp_src_in_process_service_discoverer.cpp>` (``/home/jfh/Documents/libs/microlith-cpp/src/in_process_service_discoverer.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #include "microlith/in_process_service_discoverer.h"
+   
+   namespace microlith {
+   
+   void in_process_service_discoverer::discover(
+       std::shared_ptr<abstract_service> service) {
+     auto id = service->id();
+     MICROLITH_DEBUG("Discovering {}", id);
+   
+     if (has_service(id)) {
+       MICROLITH_DEBUG("{} already discovered", id);
+       return;
+     }
+   
+     for (auto [i, s] : _services) {
+       service->_receive_services(s);
+       s->_receive_services(service);
+     }
+   
+     service->_receive_services(service);
+   
+     _services.emplace(id, std::move(service));
+   }
+   
+   bool in_process_service_discoverer::has_service(service_id id) {
+     return _services.find(id) != std::end(_services);
+   }
+   
+   std::shared_ptr<abstract_service> in_process_service_discoverer::get_service(
+       service_id id) {
+     if (has_service(id)) {
+       return _services[id];
+     }
+     MICROLITH_DEBUG("{} not discovered", service->id());
+     return {};
+   }
+   
+   }  // namespace microlith

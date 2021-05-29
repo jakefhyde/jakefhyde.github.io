@@ -1,0 +1,13 @@
+.. _exhale_function_services_8h_1a3b83c3685f600c28a9ab398a90d62a6e:
+
+Template Function microlith::detail::get_interface_id
+=====================================================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_services.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: microlith::detail::get_interface_id()

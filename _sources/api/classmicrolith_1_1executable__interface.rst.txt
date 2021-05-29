@@ -1,0 +1,25 @@
+.. _exhale_class_classmicrolith_1_1executable__interface:
+
+Class executable_interface
+==========================
+
+- Defined in :ref:`file__home_jfh_Documents_libs_microlith-cpp_include_microlith_executable_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public microlith::service_interface< executable_interface >`` (:ref:`exhale_class_classmicrolith_1_1service__interface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: microlith::executable_interface
+   :members:
+   :protected-members:
+   :undoc-members:

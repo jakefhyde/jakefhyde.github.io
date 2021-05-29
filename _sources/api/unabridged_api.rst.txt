@@ -1,0 +1,143 @@
+
+Full API
+--------
+
+Namespaces
+**********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   namespace_microlith.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   namespace_microlith__detail.rst
+
+Classes and Structs
+*******************
+
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1abstract__service.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1executable__interface.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1in__process__service__discoverer.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1provides__service.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1provides__services.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1receives__service.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1receives__services.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1service.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1service__discovery__interface.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1service__executor.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classmicrolith_1_1service__interface.rst
+
+Functions
+*********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   function_services_8h_1a3b83c3685f600c28a9ab398a90d62a6e.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_services_8h_1a6093579473d1a11a382189ed0adb06cc.rst
+
+Defines
+*******
+
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1a6095be5db5d79f75b96224fabb4758a7.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1a723ce9b8fa428fbb120113c731b28371.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1a7331ab3fe894ef71c4a5d70217c6baf3.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1abe64257d658ed5d07c3a0e7e00075335.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1a857ee39b22fd08ac96d615506d435f77.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1a031a3e48d78b3aaa0d544d4a95f9f81a.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_log_8h_1afd0ce1d79e59ca95b34b5fbba277872f.rst
+
+Typedefs
+********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   typedef_services_8h_1a9f7ee149d05544c295080b8ebbb454d2.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   typedef_services_8h_1a1e9c494312da8ba2017566e797818768.rst

@@ -116,6 +116,11 @@ Defines
 .. toctree::
    :maxdepth: 5
 
+   define_log_8h_1a23e8963c7a38b67f07c24b0a2364ebd7.rst
+
+.. toctree::
+   :maxdepth: 5
+
    define_log_8h_1a857ee39b22fd08ac96d615506d435f77.rst
 
 .. toctree::

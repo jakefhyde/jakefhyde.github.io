@@ -1,0 +1,13 @@
+.. _exhale_define_log_8h_1a23e8963c7a38b67f07c24b0a2364ebd7:
+
+Define MICROLITH_NO_SPDLOG
+==========================
+
+- Defined in :ref:`file_microlith_detail_log.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MICROLITH_NO_SPDLOG

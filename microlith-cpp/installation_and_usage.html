@@ -98,6 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#copy">Copy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cmake">CMake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-conan">CMake + Conan</a></li>
 </ul>
 </li>
 </ul>
@@ -187,8 +188,7 @@ with upcoming CI integration.</p>
 <p>Currently <strong>microlith</strong> requires <strong>ctti</strong> in order to extract service names
 from types, however this requirement is tentative and subject to change in a
 future release. <strong>microlith</strong> also requires <strong>spdlog</strong>, but can be configured
-to disable this dependency and remove/override logging. See
-<a class="reference external" href="configuration.html">Configuration</a> for more info.</p>
+to disable this dependency and remove/override logging.</p>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
@@ -208,9 +208,63 @@ installed.</p>
 CMakeLists.txt files have been carefully crafted to allow alternatives build
 systems and environments.</p>
 <p><strong>spdlog</strong> can be disabled by using the <code class="docutils literal notranslate"><span class="pre">MICROLITH_NO_SPDLOG</span></code> cmake
-definition seen below</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>cmake -DMICROLITH_NO_SPDLOG=1
+definition seen below:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cmake -DMICROLITH_NO_SPDLOG<span class="o">=</span><span class="s1">&#39;ON&#39;</span>
 </pre></div>
+</div>
+<p><strong>ctti</strong> can be embedded within <strong>microlith</strong> in the event that it cannot be
+found with <code class="docutils literal notranslate"><span class="pre">find_package</span></code> through a similar fashion:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cmake -DMICROLITH_EMBED_CTTI<span class="o">=</span><span class="s1">&#39;ON&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cmake-conan">
+<h3>CMake + Conan<a class="headerlink" href="#cmake-conan" title="Permalink to this headline">¶</a></h3>
+<p>Conan is targeted primarily as it is currently the standard build system for
+<strong>microlith</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a class="reference external" href="https://docs.conan.io/">official Conan documentation</a> is the primary
+resource for learning about Conan.</p>
+</div>
+<p><strong>microlith</strong> releases are not currently hosted on the
+<a class="reference external" href="https://conan.io/center/">Conan-Center</a>, however that is the ultimate goal
+once <strong>microlith</strong> leaves the alpha stage. Conan packages can be created using
+the following steps:</p>
+<ol class="arabic simple">
+<li><p>Clone the repository</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone ssh://git@github.com:dragozir/microlith-cpp.git
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Prepare the build directories</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> microlith-cpp
+mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build using Conan</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conan create ..
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Add <strong>microlith</strong> as a requirement in your conanfile</p></li>
+</ol>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">conanfile.txt</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[requires]</span>
+<span class="na">microlith/0.0.5</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">conanfile.py</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">requires</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;microlith/0.0.5&quot;</span><span class="p">,)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>

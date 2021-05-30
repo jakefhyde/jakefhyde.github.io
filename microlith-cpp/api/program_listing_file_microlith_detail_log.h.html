@@ -170,6 +170,10 @@
 <span class="cp">#define INCLUDE_MICROLITH_DETAIL_LOG_H_</span>
 
 <span class="cp">#ifndef MICROLITH_NO_SPDLOG</span>
+<span class="cp">#define MICROLITH_NO_SPDLOG 0</span>
+<span class="cp">#endif  </span><span class="c1">// MICROLITH_NO_SPDLOG</span>
+
+<span class="cp">#if MICROLITH_NO_SPDLOG</span>
 <span class="cp">#include</span> <span class="cpf">&lt;spdlog/spdlog.h&gt;</span><span class="cp"></span>
 <span class="cp">#define MICROLITH_TRACE(...) SPDLOG_TRACE(__VA_ARGS__)</span>
 <span class="cp">#define MICROLITH_DEBUG(...) SPDLOG_DEBUG(__VA_ARGS__)</span>
@@ -200,7 +204,7 @@
 <span class="cp">#ifndef MICROLITH_OFF</span>
 <span class="cp">#define MICROLITH_OFF(...)</span>
 <span class="cp">#endif  </span><span class="c1">// MICROLITH_OFF</span>
-<span class="cp">#endif</span>
+<span class="cp">#endif  </span><span class="c1">// MICROLITH_NO_SPDLOG</span>
 
 <span class="cp">#endif  </span><span class="c1">// INCLUDE_MICROLITH_DETAIL_LOG_H_</span>
 </pre></div>
